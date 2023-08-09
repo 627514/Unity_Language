@@ -1,0 +1,18 @@
+[
+  {
+    "Key": "test",
+    "English": "Keep going!",
+    "ChineseSimplified": "继续前进!",
+    "Japanese": "続けてください",
+    "German": "Weiter so!",
+    "French": "Continuez !",
+    "Spanish": "¡Sigue adelante!",
+    "Portuguese": "Continua!",
+    "Italian": "",
+    "Russian": "123",
+    "Hindi": "",
+    "ChineseTraditional": "繼續前進!",
+    "Arabic": "",
+    "Iran": ""
+  }
+]

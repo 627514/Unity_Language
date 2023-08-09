@@ -1,0 +1,56 @@
+<dependencies>
+  <packages>
+    <package>androidx.legacy:legacy-support-v4:1.0.0</package>
+    <package>androidx.recyclerview:recyclerview:1.2.1</package>
+    <package>com.adcolony:sdk:4.8.0</package>
+    <package>com.android.support:appcompat-v7:25.3.1</package>
+    <package>com.android.support:cardview-v7:25.3.1</package>
+    <package>com.android.support:customtabs:25.3.1</package>
+    <package>com.android.support:support-v4:25.3.1</package>
+    <package>com.applovin:applovin-sdk:11.5.5</package>
+    <package>com.chartboost:chartboost-sdk:9.1.1</package>
+    <package>com.facebook.android:audience-network-sdk:6.12.0</package>
+    <package>com.facebook.android:facebook-applinks:[11.0, 12)</package>
+    <package>com.facebook.android:facebook-core:[11.0, 12)</package>
+    <package>com.facebook.android:facebook-gamingservices:[11.0, 12)</package>
+    <package>com.facebook.android:facebook-login:[11.0, 12)</package>
+    <package>com.facebook.android:facebook-share:[11.0, 12)</package>
+    <package>com.google.android.gms:play-services-ads-identifier:17.0.0</package>
+    <package>com.google.android.gms:play-services-basement:17.2.1</package>
+    <package>com.inmobi.monetization:inmobi-ads:10.0.8</package>
+    <package>com.ironsource.adapters:adcolonyadapter:4.3.13</package>
+    <package>com.ironsource.adapters:applovinadapter:4.3.35</package>
+    <package>com.ironsource.adapters:chartboostadapter:4.3.10</package>
+    <package>com.ironsource.adapters:facebookadapter:4.3.38</package>
+    <package>com.ironsource.adapters:inmobiadapter:4.3.15</package>
+    <package>com.ironsource.adapters:mintegraladapter:4.3.11</package>
+    <package>com.ironsource.adapters:pangleadapter:4.3.15</package>
+    <package>com.ironsource.adapters:tapjoyadapter:4.1.22</package>
+    <package>com.ironsource.adapters:vungleadapter:4.3.18</package>
+    <package>com.ironsource.sdk:mediationsdk:7.2.5</package>
+    <package>com.mbridge.msdk.oversea:mbbanner:16.2.61</package>
+    <package>com.mbridge.msdk.oversea:mbbid:16.2.61</package>
+    <package>com.mbridge.msdk.oversea:newinterstitial:16.2.61</package>
+    <package>com.mbridge.msdk.oversea:reward:16.2.61</package>
+    <package>com.pangle.global:ads-sdk:4.7.0.6</package>
+    <package>com.parse.bolts:bolts-android:1.4.0</package>
+    <package>com.tapjoy:tapjoy-android-sdk:12.11.0</package>
+    <package>com.vungle:publisher-sdk-android:6.12.0</package>
+  </packages>
+  <files />
+  <settings>
+    <setting name="androidAbis" value="armeabi-v7a" />
+    <setting name="bundleId" value="com.DefaultCompany.SDKTOOL" />
+    <setting name="explodeAars" value="True" />
+    <setting name="gradleBuildEnabled" value="True" />
+    <setting name="gradlePropertiesTemplateEnabled" value="True" />
+    <setting name="gradleTemplateEnabled" value="True" />
+    <setting name="installAndroidPackages" value="True" />
+    <setting name="localMavenRepoDir" value="Assets/GeneratedLocalRepo" />
+    <setting name="packageDir" value="Assets/Plugins/Android" />
+    <setting name="patchAndroidManifest" value="True" />
+    <setting name="patchMainTemplateGradle" value="True" />
+    <setting name="projectExportEnabled" value="False" />
+    <setting name="useJetifier" value="False" />
+  </settings>
+</dependencies>
