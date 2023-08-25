@@ -9,7 +9,11 @@ public class AddImagePlus_Hierarchy
     static void MyTestA(MenuCommand menuCommand)
     {
         var node = (GameObject)menuCommand.context;
-        var imgtp = node.AddComponent<ImagePlus>();
+        var go = new GameObject("imagePlus");
+        go.transform.SetParent(node.transform);
+        go.transform.localPosition = Vector3.zero;
+        Selection.activeGameObject = go;
+        var imgtp = go.AddComponent<ImagePlus>();
         Undo.RegisterCreatedObjectUndo(imgtp, "Create" + imgtp.name);//注册到Undo系统,允许撤销
     }
 }

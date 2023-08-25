@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security;
 using UnityEditor;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
@@ -10,7 +11,11 @@ public class AddTextPlus_Hierarchy
     static void MyTestA(MenuCommand menuCommand)
     {
         var node =(GameObject) menuCommand.context;
-        var textp= node.AddComponent<TextPlus>();
+        var go = new GameObject("textPlus");
+        go.transform.SetParent(node.transform);
+        go.transform.localPosition = Vector3.zero;
+        Selection.activeGameObject = go;
+        var textp= go.AddComponent<TextPlus>();
         Undo.RegisterCreatedObjectUndo(textp, "Create" + textp.name);//注册到Undo系统,允许撤销
     }
 }

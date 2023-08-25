@@ -9,7 +9,11 @@ public class AddTextProPlus_Hierarchy
     static void MyTestA(MenuCommand menuCommand)
     {
         var node = (GameObject)menuCommand.context;
-        var textp = node.AddComponent<TextProPlus>();
+        var go = new GameObject("textProPlus");
+        go.transform.SetParent(node.transform);
+        go.transform.localPosition = Vector3.zero;
+        Selection.activeGameObject = go;
+        var textp = go.AddComponent<TextProPlus>();
         Undo.RegisterCreatedObjectUndo(textp, "Create" + textp.name);//注册到Undo系统,允许撤销
     }
 }

@@ -35,5 +35,16 @@ public class ImagePlus : Image
                 this.sprite = sp;
         }
     }
-    
+    public ImagePlus SetSprite(string spriteName,string imageName,bool setna=true)
+    {
+        if(!string.IsNullOrEmpty(imageName))
+        {
+            var sp = ResLoadManager.Instance.LoadAtlas(spriteName, imageName);
+            if (sp != null)
+                this.sprite = sp;
+            if (setna)
+                this.SetNativeSize();
+        }
+        return this;
+    }
 }
