@@ -2,8 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LanguageManager :Singleton<LanguageManager>
+public class LanguageManager 
 {
+    private static LanguageManager instance;
+    public static LanguageManager Instance
+    {
+        get
+        {
+            if (instance == null)
+                instance = new LanguageManager();
+            return instance;
+        }
+    }
     List<LanguageData> languageList;
     const string loadPath = "Tatel/LanguageData";  
     public LanguageManager()

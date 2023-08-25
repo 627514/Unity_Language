@@ -14,6 +14,6 @@ public class ButtonPlus : Button
 
     private void PlayClickSound()
     {
-        AudioManager.Instance.PlayBtn();
+        //AudioManager.Instance.PlayBtn();
     }
 }

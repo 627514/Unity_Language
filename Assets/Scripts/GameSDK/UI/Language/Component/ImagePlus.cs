@@ -39,11 +39,11 @@ public class ImagePlus : Image
     {
         if(!string.IsNullOrEmpty(imageName))
         {
-            var sp = ResLoadManager.Instance.LoadAtlas(spriteName, imageName);
-            if (sp != null)
-                this.sprite = sp;
-            if (setna)
-                this.SetNativeSize();
+            //var sp = ResLoadManager.Instance.LoadAtlas(spriteName, imageName);
+            //if (sp != null)
+            //    this.sprite = sp;
+            //if (setna)
+            //    this.SetNativeSize();
         }
         return this;
     }
